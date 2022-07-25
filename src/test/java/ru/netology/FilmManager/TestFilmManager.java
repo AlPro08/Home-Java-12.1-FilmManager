@@ -23,9 +23,8 @@ public class TestFilmManager {
         manager.addFilm("film2");
         manager.addFilm("film3");
         manager.addFilm("film4");
-        manager.addFilm("film5");
 
-        String[] expected = {"film1", "film2", "film3", "film4", "film5"};
+        String[] expected = {"film1", "film2", "film3", "film4"};
         String[] actual = manager.findAll();
 
         assertArrayEquals(expected, actual);
